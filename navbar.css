@@ -1,0 +1,46 @@
+@font-face {
+    src: url("BMJUA_otf.otf");
+    font-family: "bm";
+}
+body {
+    margin: 0;
+}
+.navbar {
+    color: black;
+    text-decoration: none;
+    font-family: "bm";
+    background-color: #CE6D39;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    padding-left: 16px;
+    padding-top:16px;
+    padding-bottom:16px;
+    font-size: 16px;
+}
+
+.navbar img {
+    width:20px;
+    height:20px;
+    border-radius:10%;
+    overflow:hidden;
+}
+.navbar a{
+    float:left;
+    text-decoration: none;
+    color: black;
+}
+
+.navbar a:hover{
+    -webkit-transform: scale(1.2);
+}
+.navbar a.split {
+    float: right;
+    padding-right: 30px;
+}
+
+footer {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+}

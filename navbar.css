@@ -17,14 +17,9 @@ body {
     padding-top:16px;
     padding-bottom:16px;
     font-size: 16px;
+    z-index: 100;
 }
 
-.navbar img {
-    width:20px;
-    height:20px;
-    border-radius:10%;
-    overflow:hidden;
-}
 .navbar a{
     float:left;
     text-decoration: none;
@@ -32,7 +27,7 @@ body {
 }
 
 .navbar a:hover{
-    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
 }
 .navbar a.split {
     float: right;

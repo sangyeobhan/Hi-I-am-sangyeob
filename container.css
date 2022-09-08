@@ -42,7 +42,7 @@
 }
 
 .container:hover{
-    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 @media(max-width:900px){
     .gridcontainer{
@@ -84,6 +84,6 @@
         border-bottom-left-radius: 10px;
     }
     .container:hover{
-        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
     }
 }

@@ -15,7 +15,7 @@
 </head>
 <body>
     <h1>sangyeob Han</h1>
-    <div class="navbar">
+    <div id="navbar">
         <a href="index.html">Sangyeob Han</a>
         <a href="hobby.html" class="split">hobby</a>
         <a href="resume.html" class="split">resume</a>
@@ -104,5 +104,19 @@
             <img src="pics/githubicon.png" alt="github" width="60px" length="60px">
         </a>
     </footer>
+
+    <script>
+        let lastScroll;
+        navbar = document.getElementById('navbar');
+        window.addEventListener('scroll',function(){
+            let scroll = window.pageYOffset;
+            if(scroll > lastScroll){
+                navbar.style.top='-50px';
+            } else {
+                navbar.style.top='0';
+            }
+            lastScroll = scroll;
+        });
+    </script>
 </body>
 </html>

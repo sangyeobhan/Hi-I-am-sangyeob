@@ -105,6 +105,8 @@
         </a>
     </footer>
 
+    <div class="progressBar"></div>
+
     <script>
         let lastScroll;
         navbar = document.getElementById('navbar');
@@ -117,6 +119,16 @@
             }
             lastScroll = scroll;
         });
+
+        window.addEventListener('scroll', () => {
+            progress = document.querySelector('.progressBar');
+            let scroll = window.pageYOffset;
+            let height =  document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            let scrolled = (scroll / height) * 100;
+            progress.style.width = scrolled + '%';
+        });
     </script>
+
+
 </body>
 </html>
